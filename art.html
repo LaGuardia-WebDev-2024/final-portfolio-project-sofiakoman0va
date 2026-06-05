@@ -4,22 +4,90 @@
     <meta charset="utf-8" />
     <title>Final Project - Art</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <style>
       /* Styling Only Related To THIS Page */
       .parent-flex {
         display: flex;
-        background-color: purple;
         justify-content: space-around;
         padding: 10px;
         margin-bottom: 20px;
+        overflow: auto;
+        white-space: nowrap;
+        margin-bottom: 0;
+        padding-top: 40px;
+      }
+      
+      .parent-flex img {
+        margin: 5px;
+        height: 100px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+      
+      .parent-flex img:hover {
+        transform: translateY(-20px) scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);      
       }
 
-      img {
-        max-width: 30%;
-        border-radius: 10px;
-        object-fit: contain;
-        background-color: white;
+      #illustration-spotlight {
+        height: 500px;
+        margin-left: 30px;
+        margin-right: 30px;
       }
+
+      #big-illustration-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      #top-div-illustration {
+        display:flex;
+        justify-content: space-between;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+        margin-top: 30px;
+        align-items: stretch;
+        height: 500px;
+      }
+      
+      #illustration-info {
+        font-size: 40px;
+      }
+      
+      #illustration-title {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      #illustration-statement {
+        font-size: 20px;
+        margin-top: 20px;
+        background-color: rgb(255, 212, 220);
+      }
+
+        #info-div {
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        padding-right: 20px
+      }
+
+
+      h1, li a, #illustration-info, #illustration-title, #illustration-statement {
+        font-family: "Sofia Sans", sans-serif;
+      }
+
+      #illustration-info, #illustration-title, #illustration-statement {
+        color: #F46197;
+      }
+
     </style>
   </head>
   <body>
@@ -28,7 +96,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a class="active" href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
+      <li><a href="websites.html">Websites</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -44,25 +112,164 @@
         /></a>
       </li>
     </ul>
+
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
 
-    <div class="parent-flex">
-      <img
-        src="images/HeartIcons.jpeg"
-      />
-      <img
-        src="images/VibeyTunes.png"
-      />
-    </div>
+    <h1>my art</h1>
 
-    <div class="parent-flex">
-      <img
-        src="images/VibeyTunes.png"
-      />
-      <img
-        src="images/HeartIcons.jpeg"
-      />
+      <div id="top-div-illustration">
+      <div id="info-div"> 
+        <div id="illustration-title"
+             style="display: none"
+             >
+        title of piece  
+        </div>
+        <div id="illustration-info"
+             style="display: none"
+             >
+        piece info
+      </div>
+      <div id="illustration-statement"
+             style="display: none"
+             >
+        artist statement
+      </div>
+      </div>
+
+        
+      
+      <div id="big-illustration-div">
+        <img id="illustration-spotlight"
+             style="display: none"
+             src="images/2021_WebDevLogo_transpYear.png">
+      </div>
     </div>
+    
+
+<!-- Scroll illustrations bottom -->
+
+    <div class="parent-flex fade in">
+  
+      <img
+      id="my-papa" class="small-drawing"
+       src="images/Untitled_Artwork.png"
+       data-title="my papa"
+       data-info="digital illustration <br> 2026"
+       data-statement="my father and i in bishkek."
+      />
+
+       <img
+       id="moldy-lamb" class="small-drawing"
+       src="images/Moldy Lamb.jpg"
+       data-title="moldy lamb"
+       data-info="digital illustration <br> 2025"
+       data-statement="a lone lamb growing mold from inside."
+      />
+
+      <img
+      id="tiger-sister" class="small-drawing"
+      src="images/SofiaKomanova_TigerSister.jpg"
+      data-title="tiger sister"
+      data-info="digital illustration <br> 2025"
+      data-statement="a story of a girl and a wild tiger in kyrgyzstan."
+      />
+
+      <img
+      id="kyrgyz girl" class="small-drawing"
+      src="images/Kyrgyz Girl.png"
+      data-title="kyrgyz girl"
+      data-info="digital illustration <br> 2025"
+      data-statement="just a girl from kyrgyzstan."
+      />
+   
+      <img
+      id="euna character sheet" class="small-drawing"
+      src="images/IMG_1181.png"
+      data-title="euna character sheet"
+      data-info="digital illustration <br> 2026"
+      data-statement="euna, a serious overachiever."
+      />
+
+      <img
+      id="marcy character sheet" class="small-drawing"
+      src="images/Marcy Character Sheet.png"
+      data-title="marcy character sheet"
+      data-info="digital illustration <br> 2026"
+      data-statement="marcy, a sporty troublemaker."
+      />
+
+      <img
+      id="another-world" class="small-drawing"
+      src="images/IMG_1174.png"
+      data-title="another world"
+      data-info="digital illustration <br> 2025"
+      data-statement="imagine a world of mold and bacteria."
+      />
+
+      <img
+      id="the-slippers" class="small-drawing"
+      src="images/Slippers.JPG"
+      data-title="the slippers"
+      data-info="acrylic on cardboard <br> 2026"
+      data-statement="kyrgyz slippers belonging to my mother and i."
+      />
+
+      <img
+      id="america" class="small-drawing"
+      src="images/Untitled_Artwork 3.png"
+      data-title="fanart"
+      data-info="digital illustration <br> 2026"
+      data-statement="fanart of characters alfred and tony from hetalia."
+      />
+
+      <img
+      id="comic" class="small-drawing"
+      src="images/Comic Excerpt.png"
+      data-title="comic excerpt"
+      data-info="digital <br> 2025"
+      data-statement="an excerpt from the handyman and the ghost boy."
+      />
+
+  </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+     $(document).ready(function () {
+    $(".small-drawing").click(function () {
+      const newSrc = $(this).attr("src");
+      const newTitle = $(this).attr("data-title");
+      const newInfo = $(this).attr("data-info");
+      const newStatement = $(this).attr("data-statement");
+
+      $("#illustration-spotlight").fadeOut(400, function () {
+        $(this).attr("src", newSrc).fadeIn(400);
+      });
+
+      $("#illustration-title").fadeOut(400, function () {
+        $(this).text(newTitle).fadeIn(400);
+      });
+
+      $("#illustration-info").fadeOut(400, function () {
+        $(this).html(newInfo).fadeIn(400);
+      });
+
+      $("#illustration-statement").fadeOut(400, function () {
+        $(this).html(newStatement).fadeIn(400);
+      });
+      
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeElems = document.querySelectorAll('.fade-in');
+    fadeElems.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 300); 
+    });
+  });
+
+    </script>
+
   </body>
 </html>

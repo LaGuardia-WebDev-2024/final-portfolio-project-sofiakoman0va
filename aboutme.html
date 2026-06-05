@@ -4,25 +4,67 @@
     <meta charset="utf-8" />
     <title>Final Project - About Me</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <style>
       /* Styling Only Related To THIS Page */
       .parent-flex {
         display: flex;
-        background-color: purple;
+        background-color: #F46197;
         align-items: center;
         justify-content: space-around;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        width: 600px;
       }
 
       .parent-flex img {
         width: 150px;
-        padding: 20px;
+        padding: 5px;
       }
       .child-flex p {
         background-color: pink;
         padding: 20px;
         margin: 20px;
       }
+
+      .gallery {
+        display: flex;
+        padding: 10px;
+      }
+
+      .gallery-items {
+        margin-top: 0px;
+      }
+
+      .container {
+        display:flex;
+      }
+
+      h1, li a, h4, h3, p {
+        font-family: "Sofia Sans", sans-serif;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      h3 {
+        margin-left: 30px;
+        font-size: 20px;
+      }
+
+      #Sayori-image {
+        position: relative;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      #hetalia-image {
+        margin-left: 10px;
+      }
+
     </style>
   </head>
   <body>
@@ -31,7 +73,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a class="active" href="aboutme.html">About Me</a></li>
       <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
+      <li><a href="websites.html">Websites</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -44,47 +86,110 @@
           ><img
             src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
             style="width: 25px; margin: -5px"
-        /></a>
+        />
+      </a>
       </li>
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>About Me</h1>
+    <h1>about me</h1>
+    
+    <div style="align-content: center;" class="container">
+      <div class="container-items">
+
+    <h3>my favorite games</h3>
     <div class="parent-flex">
       <div class="child-flex">
-        <img
-          src="images/HeartIcons.jpeg"
+         <img
+          src="https://e.snmc.io/lk/g/x/6b0b55dcafc9ed5d71d306839ec0bcd5/7788174"
         />
       </div>
       <div class="child-flex">
+        <h4>Metal Gear Solid 2</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+        I truly love all of the Metal Gear games an insane amount, but MGS2 is my top favorite out of them all. It is just so special and has amazing character relationships and writing. 
         </p>
-      </div>
+        </div>
     </div>
+
     <div class="parent-flex">
       <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <img
-          src="images/VibeyTunes.png"
+         <img
+          src="https://lowcygier.pl/wp-content/uploads/2026/03/tomodachi-life-living-the-dream-miniaturka.jpg"
         />
       </div>
+      <div class="child-flex">
+        <h4>Tomodachi Life Living the Dream</h4>
+        <p>
+          It is so much fun creating miis and just doing things to them. Feeding them, clothing them, watching them interact with each other; It's genuinely addicting. I spend so much time customizing my characters.
+        </p>
+        </div>
     </div>
+
+      <div class="parent-flex">
+      <div class="child-flex">
+         <img
+          src="https://image.api.playstation.com/cdn/UP0082/CUSA01442_00/QHRbFpnFoWaPuNOuKrulhmshvbbMAv0v.png"
+        />
+      </div>
+      <div class="child-flex">
+        <h4>Life is Strange</h4>
+        <p>
+          Life is Strange and Life is Strange 2 are both great games with lovable protagonists. They are notorious for their cringe dialogue and tumblr aesthetic, but I find it so endearing. LiS2 takes the decision-making aspect to a greater level than the first.
+        </p>
+        </div>
+      </div>
+      </div>
+      
+      <div class="container-items">
+    <h3>my favorite albums</h3>
+    <div class="parent-flex">
+      <div class="child-flex">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/1/14/Three_cheers_clean.jpg"
+        />
+      </div>
+        <div class="child-flex">
+          <h4> Three Cheers for Sweet Revenge - My Chemical Romance</h4>
+          <p>
+            This album is so amazing and perfect. I can literally listen to it forever, and I have every single song on loop. My favorite songs are Ghost of You, To the End, I'm Not Okay (I Promise), Helena.
+          </p>
+        </div>
+      </div>
+
+      <div class="parent-flex">
+      <div class="child-flex">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/3/35/I_Brought_You_My_Bullets%2C_You_Brought_Me_Your_Love_cover.jpg"
+        />
+      </div>
+        <div class="child-flex">
+          <h4>I Brought You My Bullets, You Brought Me Your Love<br> - My Chemical Romance</h4>
+          <p>
+            Can you tell I love MCR? This album is also just gem after gem. My favorite songs (if I had to choose) are Skylines and Turnstiles, Early Sunsets Over Monroeville, and Demolition Lovers.
+          </p>
+        </div>
+      </div>
+        
+      <div class="parent-flex">
+      <div class="child-flex">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Sophie_-_Oil_of_Every_Pearl%27s_Un-Insides.png/250px-Sophie_-_Oil_of_Every_Pearl%27s_Un-Insides.png"
+        />
+      </div>
+        <div class="child-flex">
+          <h4>Oil of Every Pearl's Un-Insides - SOPHIE</h4>
+          <p>
+            This album is beautiful in every way and was so ahead of its time. It never fails to illicite so many emotions out of me. My favorites from this album are It's Okay to Cry, Is It Cold In The Water?, and Immaterial.
+          </p>
+        </div>
+      </div>
+      </div>
+      
+
+    <!-- Additional Images -->
+     
+</div>
+       
   </body>
 </html>
